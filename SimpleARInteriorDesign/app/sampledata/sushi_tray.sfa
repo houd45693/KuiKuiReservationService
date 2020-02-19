@@ -1,0 +1,41 @@
+{
+  materials: [
+    {
+      name: 'red',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            0.69157299999999999,
+            0.057151,
+            0.057151,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.14280000000000001,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/sushi_tray.obj',
+    name: 'sushi_tray',
+    recenter: 'root',
+  },
+  version: '0.54:2',
+}
