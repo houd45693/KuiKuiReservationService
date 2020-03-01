@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UpdateProfile">
+    tools:context=".UpdateProfile"
+    android:background="#debcb0">
 
     <ImageView
         android:id="@+id/ivProfileUpdate"
@@ -16,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.209"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@mipmap/ic_launcher_round" />
 
     <EditText
         android:id="@+id/etNameUpdate"
@@ -67,5 +68,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etAgeUpdate"
-        app:layout_constraintVertical_bias="0.352" />
+        app:layout_constraintVertical_bias="0.352"
+        android:background="#a96363"
+        android:textColor="#ffffff"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
