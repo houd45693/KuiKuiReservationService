@@ -5,8 +5,6 @@ public class UserProfile {
     public String userEmail;
     public String userName;
 
-    public UserProfile() {
-    }
 
     public UserProfile(String userAge, String userEmail, String userName){
         this.userAge = userAge;
