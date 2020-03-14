@@ -93,7 +93,7 @@ public class UpdateProfile extends AppCompatActivity {
 
 
         final StorageReference storageReference = firebaseStorage.getReference();
-        
+
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
