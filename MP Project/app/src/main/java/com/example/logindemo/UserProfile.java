@@ -6,12 +6,16 @@ public class UserProfile {
     public String userName;
 
 
+    public UserProfile(){
+
+    }
+
     public UserProfile(String userAge, String userEmail, String userName){
         this.userAge = userAge;
         this.userEmail = userEmail;
         this.userName = userName;
 
-        }
+    }
 
 
     public String getUserAge(){

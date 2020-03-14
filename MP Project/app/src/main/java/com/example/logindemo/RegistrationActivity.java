@@ -95,13 +95,13 @@ public class RegistrationActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
                             if (task.isSuccessful()){
-                                //sendEmailVerification();
-                                sendUserData();
-                                firebaseAuth.signOut();
-                                Toast.makeText(RegistrationActivity.this,"Successful Registered, Upload complete!",Toast.LENGTH_SHORT).show();
+                                sendEmailVerification();
+                                //sendUserData();
+                                //firebaseAuth.signOut();
+                                //Toast.makeText(RegistrationActivity.this,"Successful Registered, Upload complete!",Toast.LENGTH_SHORT).show();
 
-                                finish();
-                                startActivity(new Intent(RegistrationActivity.this , MainActivity.class));
+                                //finish();
+                                //startActivity(new Intent(RegistrationActivity.this , MainActivity.class));
                             }
                             else{
                                 Toast.makeText(RegistrationActivity.this, "Registration Failed", Toast.LENGTH_SHORT).show();
@@ -170,7 +170,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
     private void sendUserData(){
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = firebaseDatabase.getReference(firebaseAuth.getUid());
+        DatabaseReference myRef = firebaseDatabase.getReference("UserInfo").child(firebaseAuth.getUid());
         StorageReference imageReference = storageReference.child(firebaseAuth.getUid()).child("Images").child("Profile Pic"); // User Id/Images/profile_pic.png
         UploadTask uploadTask = imageReference.putFile(imagePath);
         uploadTask.addOnFailureListener(new OnFailureListener() {
