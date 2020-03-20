@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="saveCID" type="id" />
+    <item name="tvTitle1" type="id" />
+    <item name="calendarViewCID" type="id" />
+    <item name="layoutCID" type="id" />
+    <item name="saveCOD" type="id" />
+    <item name="tvTitle2" type="id" />
+    <item name="calendarViewCOD" type="id" />
+    <item name="layoutCOD" type="id" />
+    <item name="tvDateReceipt" type="id" />
+    <item name="bookingNumber" type="id" />
+    <item name="btnHome" type="id" />
+</resources>

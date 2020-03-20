@@ -16,6 +16,7 @@ public class SecondActivity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
     private Button logout;
+    private Button btn_continue;
 
 
 
@@ -28,11 +29,19 @@ public class SecondActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
 
         logout = (Button)findViewById(R.id.btnLogout);
+        btn_continue = (Button)findViewById(R.id.btn_continue);
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Logout();
+            }
+        });
+
+        btn_continue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SecondActivity.this,TableBooking.class));
             }
         });
 
@@ -43,9 +52,6 @@ public class SecondActivity extends AppCompatActivity {
         finish();
         startActivity(new Intent(SecondActivity.this, MainActivity.class));
     }
-
-
-
 
 
 
