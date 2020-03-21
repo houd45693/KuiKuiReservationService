@@ -29,7 +29,8 @@
         <activity android:name=".PasswordActivity" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".SecondActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            >
 
         </activity>
     </application>
