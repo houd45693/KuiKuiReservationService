@@ -20,7 +20,10 @@ public class SecondActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private AppBarLayout appBarLayout;
     private ViewPager viewPager;
-    
+
+    private FirebaseAuth firebaseAuth;
+
+    private Button btn_continue;
 
 
 
@@ -41,9 +44,25 @@ public class SecondActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
 
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        btn_continue = (Button)findViewById(R.id.btn_continue);
+
+
+        btn_continue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SecondActivity.this,TableBooking.class));
+            }
+        });
+
     }
 
 
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
 
 }
