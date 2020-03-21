@@ -8,6 +8,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -185,5 +187,33 @@ public class TableBooking extends AppCompatActivity {
         });
        popupCOD.show();
    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId()){
+
+            case R.id.profileMenu: {
+                startActivity(new Intent(TableBooking.this, ProfileActivity.class));
+                break;
+            }
+
+            case R.id.logoutMenu:{
+                Logout();
+                break;
+            }
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void Logout(){
+        firebaseAuth.signOut();
+        finish();
+        startActivity(new Intent(TableBooking.this, MainActivity.class));
+    }
 
 }

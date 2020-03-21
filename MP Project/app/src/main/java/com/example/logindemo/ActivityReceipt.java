@@ -5,11 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -29,6 +32,7 @@ public class ActivityReceipt extends AppCompatActivity {
 
     private DatabaseReference databaseReference;
     private TextView randomNumber;
+    private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,4 +91,33 @@ public class ActivityReceipt extends AppCompatActivity {
             }
             });
         };
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
     }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId()){
+
+            case R.id.profileMenu: {
+                startActivity(new Intent(ActivityReceipt.this, ProfileActivity.class));
+                break;
+            }
+
+            case R.id.logoutMenu:{
+                Logout();
+                break;
+            }
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void Logout(){
+        firebaseAuth.signOut();
+        finish();
+        startActivity(new Intent(ActivityReceipt.this, MainActivity.class));
+    }
+}

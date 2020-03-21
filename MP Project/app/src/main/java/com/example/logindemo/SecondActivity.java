@@ -64,5 +64,26 @@ public class SecondActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId()){
 
+            case R.id.profileMenu: {
+                startActivity(new Intent(SecondActivity.this, ProfileActivity.class));
+                break;
+            }
+
+            case R.id.logoutMenu:{
+                Logout();
+                break;
+            }
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void Logout(){
+        firebaseAuth.signOut();
+        finish();
+        startActivity(new Intent(SecondActivity.this, MainActivity.class));
+    }
 }

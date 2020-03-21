@@ -3,14 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="650dp"
     tools:context=".SecondActivity"
     android:orientation="vertical"
     android:background="#debcb0">
 
     <com.google.android.material.appbar.AppBarLayout
+
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="240dp"
         android:gravity="center"
         app:elevation="0dp"
         android:id="@+id/appbarid">
@@ -33,7 +34,7 @@
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager_id"
         android:layout_width="match_parent"
-        android:layout_height="330dp">
+        android:layout_height="250dp">
 
     </androidx.viewpager.widget.ViewPager>
 
