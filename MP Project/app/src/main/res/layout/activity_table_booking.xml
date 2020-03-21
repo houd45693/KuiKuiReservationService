@@ -4,26 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffd2dc"
     tools:context=".TableBooking">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose Date"
-        android:textSize="24sp"
-        android:layout_centerInParent="true"
         android:layout_alignParentTop="true"
-        android:gravity="center"/>
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:fontFamily="serif-monospace"
+        android:text="Choose Date"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp">
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="#ffd2dc">
 
         <androidx.cardview.widget.CardView
             android:layout_width="370dp"
-            android:layout_height="60dp"
-            android:layout_marginHorizontal="10dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="15dp"
             android:onClick="showPopupCID"
             app:cardBackgroundColor="#ffffff">
 
@@ -34,26 +40,27 @@
                 android:layout_marginVertical="15dp"
                 android:layout_marginLeft="5dp"
                 android:text="First Date"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/popupCID"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginVertical="5dp"
-                android:layout_marginLeft="315dp"
+                android:layout_marginLeft="275dp"
                 android:src="@drawable/cal" />
         </androidx.cardview.widget.CardView>
     </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="105dp">
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="105dp"
+        android:background="#ffd2dc">
 
         <androidx.cardview.widget.CardView
             android:layout_width="370dp"
-            android:layout_height="60dp"
-            android:layout_marginHorizontal="10dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="15dp"
             android:onClick="showPopupCOD"
             app:cardBackgroundColor="#ffffff">
 
@@ -64,75 +71,78 @@
                 android:layout_marginVertical="15dp"
                 android:layout_marginLeft="5dp"
                 android:text="Last Date"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/popupCOD"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginVertical="5dp"
-                android:layout_marginLeft="315dp"
+                android:layout_marginLeft="275dp"
                 android:src="@drawable/cal" />
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/black"
-        android:layout_marginTop="175dp"/>
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@android:color/black"-->
+<!--        android:layout_marginTop="175dp"/>-->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TABLE OPTION"
-        android:textSize="24sp"
-        android:layout_centerInParent="true"
-        android:layout_alignParentTop="true"
-        android:gravity="center"
-        android:layout_marginTop="180dp"/>
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="TABLE OPTION"-->
+<!--        android:textSize="24sp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginTop="180dp"/>-->
 
-    <TextView
-        android:id="@+id/info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="185dp"
-        android:text="TABLE INFO"
-        android:textStyle="italic"
-        android:textSize="19sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/info"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginTop="185dp"-->
+<!--        android:text="TABLE INFO"-->
+<!--        android:textStyle="italic"-->
+<!--        android:textSize="19sp" />-->
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="175dp">
+        android:layout_marginTop="160dp"
+        android:background="#ffd2dc">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="45dp">
+            android:layout_marginTop="20dp">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="125dp">
+                android:layout_height="125dp"
+                app:cardBackgroundColor="#ffd2dc">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
                     android:text="WEDDING"
+                    android:textColor="#000000"
                     android:textSize="22sp" />
 
 
                 <ImageView
                     android:id="@+id/open"
-                    android:layout_width="124dp"
-                    android:layout_height="140dp"
+                    android:layout_width="125dp"
+                    android:layout_height="110dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="140dp"
+                    android:layout_marginLeft="130dp"
                     android:src="@drawable/open" />
 
                 <TextView
@@ -140,18 +150,20 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="125dp"
                     android:layout_marginTop="40dp"
+                    android:textColor="#000000"
                     android:text="RM125 \n-1500 people"
                     android:textSize="23sp" />
 
                 <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
                     android:id="@+id/num1"
-                    android:layout_width="120dp"
+                    android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="140dp"
+                    android:layout_marginRight="120dp"
                     android:background="#00AD5F5F"
-                    app:backGroundColor="#52BB63"
-                    app:finalNumber="3"
+                    app:backGroundColor="#E9A20F0F"
+                    app:finalNumber="10"
+                    app:initialNumber="0"
                     app:textColor="#FFFFFF"
                     app:textSize="10sp">
 
@@ -164,11 +176,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="155dp">
+            android:layout_marginTop="135dp">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="125dp">
+                android:layout_height="125dp"
+                app:cardBackgroundColor="#ffd2dc">
 
 
                 <TextView
@@ -176,14 +189,15 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
                     android:text="BIRTHDAY DINNER"
+                    android:textColor="#000000"
                     android:textSize="22sp" />
 
                 <ImageView
                     android:layout_width="125dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="90dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="132dp"
-                    android:src="@drawable/birthday" />
+                    android:src="@drawable/newbirthday" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -191,16 +205,19 @@
                     android:layout_marginLeft="125dp"
                     android:layout_marginTop="40dp"
                     android:text="RM132 \n-100 people "
+                    android:textColor="#000000"
                     android:textSize="23sp" />
 
                 <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
                     android:id="@+id/num2"
-                    android:layout_width="120dp"
+                    android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="140dp"
-                    app:backGroundColor="#52BB63"
-                    app:finalNumber="3"
+                    android:layout_marginRight="120dp"
+                    android:background="#00AD5F5F"
+                    app:backGroundColor="#E9A20F0F"
+                    app:finalNumber="10"
+                    app:initialNumber="0"
                     app:textColor="#FFFFFF"
                     app:textSize="10sp">
 
@@ -211,26 +228,28 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="280dp">
+            android:layout_marginTop="255dp">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="125dp">
+                android:layout_height="125dp"
+                app:cardBackgroundColor="#ffd2dc">
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="12dp"
+                    android:textColor="#000000"
                     android:text="SPECIAL OCCASION"
                     android:textSize="22sp" />
 
                 <ImageView
-                    android:layout_width="115dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="125dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="130dp"
-                    android:src="@drawable/special" />
+                    android:src="@drawable/christmas" />
 
 
                 <TextView
@@ -238,17 +257,20 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="125dp"
                     android:layout_marginTop="40dp"
+                    android:textColor="#000000"
                     android:text="RM150 \n-500 people"
                     android:textSize="23sp" />
 
                 <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
                     android:id="@+id/num3"
-                    android:layout_width="120dp"
+                    android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_marginRight="140dp"
-                    app:backGroundColor="#52BB63"
-                    app:finalNumber="3"
+                    android:layout_marginRight="120dp"
+                    android:background="#00AD5F5F"
+                    app:backGroundColor="#E9A20F0F"
+                    app:finalNumber="10"
+                    app:initialNumber="0"
                     app:textColor="#FFFFFF"
                     app:textSize="10sp"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
 
@@ -256,14 +278,16 @@
         </LinearLayout>
 
 
+
         <TextView
-            android:layout_width="206dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="10dp"
-            android:layout_marginBottom="21dp"
+            android:layout_marginBottom="30dp"
             android:text="Your Booking Number: "
+            android:textColor="#000000"
             android:textSize="22sp" />
 
         <TextView
@@ -272,25 +296,24 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="228dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginBottom="35dp"
             android:text="#"
             android:textSize="22sp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnConfirm"
-            android:layout_width="77dp"
-            android:layout_height="81dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="315dp"
+            android:layout_marginStart="300dp"
             android:layout_marginEnd="19dp"
-            android:layout_marginBottom="17dp"
+            android:layout_marginBottom="20dp"
             android:clickable="true"
-            app:backgroundTint="#9C27B0"
+            app:backgroundTint="#E9A20F0F"
             app:srcCompat="@drawable/background" />
-
 
     </RelativeLayout>
 
