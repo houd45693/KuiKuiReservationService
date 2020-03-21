@@ -2,11 +2,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:background="#ffd2dc"
     android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="424dp">
+        android:layout_height="424dp"
+        android:background="#ffd2dc">
 
         <TextView
             android:id="@+id/tv1"
@@ -14,10 +16,12 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="serif-monospace"
             android:text="KuiKui Receipt"
-            android:textSize="24sp"
-            android:textStyle="italic|bold" />
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tv2"
@@ -26,6 +30,7 @@
             android:layout_below="@id/tv1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
+            android:textColor="#000000"
             android:text="No.121,Bukit Kayangan \nJalan Istana Budaya \nKuala Lumpur"
             android:textSize="18sp" />
 
@@ -35,9 +40,9 @@
             android:layout_below="@id/tv2"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
+            android:textColor="#000000"
             android:text="(+60) 123456789 \nkuikuirangers@gmail.com"
-            android:textSize="18sp"
-            android:textStyle="italic" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tvDateReceipt"
@@ -49,6 +54,7 @@
             android:gravity="end"
             android:text="Date"
             android:textAlignment="textEnd"
+            android:textColor="#000000"
             android:textSize="18sp" />
 
         <TextView
@@ -62,6 +68,7 @@
             android:layout_marginEnd="40dp"
             android:layout_marginBottom="20dp"
             android:gravity="center"
+            android:textColor="#000000"
             android:text="Your Booking Number: "
             android:textSize="22sp" />
 
@@ -72,26 +79,28 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_marginStart="159dp"
-            android:layout_marginLeft="159dp"
+            android:layout_marginLeft="130dp"
             android:layout_marginTop="198dp"
             android:layout_marginEnd="60dp"
             android:layout_marginRight="53dp"
             android:layout_marginBottom="159dp"
             android:gravity="center"
+            android:textColor="#000000"
             android:text="#"
             android:textSize="22sp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="230dp"
+            android:layout_marginTop="250dp"
             android:background="@android:color/black" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="136dp"
-        android:layout_marginTop="230dp">
+        android:layout_marginTop="273dp"
+        android:background="#E9A20F0F">
 
         <TextView
             android:id="@+id/bookingName"
@@ -99,7 +108,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:text="Dear Customer,"
-            android:textSize="20sp" />
+            android:textColor="#ffffff"
+            android:textSize="22sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -107,7 +117,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="30dp"
             android:text="Thank you for reserving with our new app."
-            android:textSize="20sp" />
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -115,7 +126,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="60dp"
             android:text="Please show this receipt at the restaurant to check-in."
-            android:textSize="20sp" />
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
 
     </RelativeLayout>
     <TextView
@@ -137,21 +149,27 @@
 
     <Button
         android:id="@+id/btnHome"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Back to Main Menu"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:background="#E9A20F0F"
+        android:fontFamily="serif-monospace"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/tvTotalPrice"
-        android:layout_width="279dp"
+        android:layout_width="650dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="282dp"
+        android:layout_marginRight="100dp"
         android:layout_marginBottom="74dp"
-        android:textSize="15dp"
+        android:textColor="#000000"
+        android:textSize="18dp"
         android:textStyle="bold" />
 
 
