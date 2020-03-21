@@ -29,17 +29,17 @@
         app:tabTextColor="@color/tabtextcolor"
         app:tabIndicator="@color/tabindicatorcolor"
         android:background="@color/colorPrimary"/>
+
     <androidx.viewpager.widget.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/viewpager_id"
-        ></androidx.viewpager.widget.ViewPager>
+        android:layout_width="match_parent"
+        android:layout_height="330dp">
 
-
+    </androidx.viewpager.widget.ViewPager>
 
     <Button
         android:id="@+id/btn_continue"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Continue"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,4 +48,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.934" />
+
+
 </LinearLayout>
