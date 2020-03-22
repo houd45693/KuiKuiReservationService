@@ -4,32 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="650dp"
-    tools:context=".SecondActivity"
+    android:background="#FFD2DC"
     android:orientation="vertical"
-    android:background="#debcb0">
+    tools:context=".SecondActivity">
 
     <com.google.android.material.appbar.AppBarLayout
 
+        android:id="@+id/appbarid"
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:gravity="center"
-        app:elevation="0dp"
-        android:id="@+id/appbarid">
+        app:elevation="0dp">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:src="@drawable/open"/>
+            android:src="@drawable/open" />
     </com.google.android.material.appbar.AppBarLayout>
+
     <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
         app:tabGravity="fill"
-        app:tabMode="fixed"
-        android:id="@+id/tablayout_id"
-        app:tabTextColor="@color/tabtextcolor"
         app:tabIndicator="@color/tabindicatorcolor"
-        android:background="@color/colorPrimary"/>
+        app:tabMode="fixed"
+        app:tabTextColor="@color/tabtextcolor" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager_id"
@@ -42,7 +44,12 @@
         android:id="@+id/btn_continue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#E9A20F0F"
+        android:fontFamily="serif-monospace"
         android:text="Continue"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.863"

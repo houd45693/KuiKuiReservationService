@@ -98,7 +98,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="136dp"
+        android:layout_height="140dp"
         android:layout_marginTop="273dp"
         android:background="#E9A20F0F">
 
@@ -125,7 +125,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="60dp"
-            android:text="Please show this receipt at the restaurant to check-in."
+            android:text="\nPlease show this receipt at the restaurant to check-in."
             android:textColor="#ffffff"
             android:textSize="22sp" />
 

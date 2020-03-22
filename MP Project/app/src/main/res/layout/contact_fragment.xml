@@ -7,7 +7,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contact"
+        android:text="User are welcomed to contact us through our 24/7 customer line provided by KuiKui Reservation Service.
+        \n\nJalan Rambutan,Taman Melodies,Johor Bahru,Johor
+        \n\n(+60)123456789 \nkuikuirangers@gmail.com"
         android:textSize="20sp"
         android:textStyle="bold"/>
 
