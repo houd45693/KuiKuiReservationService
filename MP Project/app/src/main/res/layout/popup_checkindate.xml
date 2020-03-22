@@ -24,8 +24,8 @@
         android:id="@+id/calendarViewCID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#00CED1"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:background="#FFD2DC" />
 
     <RelativeLayout
         android:layout_width="match_parent"

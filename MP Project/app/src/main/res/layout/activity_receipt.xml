@@ -31,7 +31,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:textColor="#000000"
-            android:text="No.121,Bukit Kayangan \nJalan Istana Budaya \nKuala Lumpur"
+            android:text="Jalan Rambutan \nTaman Melodies \nJohor Bahru,Johor."
             android:textSize="18sp" />
 
         <TextView
